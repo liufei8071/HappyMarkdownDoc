@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Markdown 技术支持 / Support</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --fg: #1b1b1f;
+        --muted: #5c5f66;
+        --bg: #ffffff;
+        --line: #e3e5e8;
+        --accent: #2f6feb;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #e8e9ec;
+          --muted: #a0a3aa;
+          --bg: #16181c;
+          --line: #2c3037;
+          --accent: #7aa2f7;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 48px 24px 96px;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 28px;
+        line-height: 1.35;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 44px 0 12px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+      }
+      h3 {
+        font-size: 16px;
+        margin: 26px 0 6px;
+      }
+      p,
+      li {
+        margin: 6px 0;
+      }
+      ul {
+        padding-left: 22px;
+      }
+      .lead {
+        color: var(--muted);
+        margin: 0 0 4px;
+      }
+      .lang {
+        font-size: 14px;
+        color: var(--muted);
+      }
+      .lang a {
+        color: var(--accent);
+      }
+      .contact {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 4px 18px 14px;
+        margin-top: 12px;
+      }
+      .todo {
+        color: var(--muted);
+      }
+      footer {
+        margin-top: 56px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        font-size: 14px;
+        color: var(--muted);
+      }
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="lang"><a href="#en">English</a></p>
+
+      <h1>Happy Markdown 技术支持</h1>
+      <p class="lead">本地优先的 Markdown 编辑器。文稿是以 .md 保存的普通文件，放在你选择的文件夹里，断网也能写作与导出。</p>
+
+      <h2>运行要求</h2>
+      <p>macOS 10.15 或更高版本。App Store 版本在系统沙箱中运行。</p>
+
+      <h2>常见问题</h2>
+
+      <h3>首次打开时为什么要求选择文件夹</h3>
+      <p>
+        沙箱下的应用只能访问用户通过系统面板授权的目录。首次打开时选择一个工作文件夹即可，应用会用安全作用域书签记住它，下次启动继续可用。需要更换目录时，从侧栏重新选择。
+      </p>
+
+      <h3>AI 功能提示无法连接</h3>
+      <p>
+        AI 功能需要自备模型。默认连接本机 127.0.0.1:11434 上的 Ollama 服务，也可以在设置里填写自己的 API 地址。没有可用模型时该面板会提示无法连接，编辑、预览、公式、图表、乐谱与导出均不受影响。
+      </p>
+
+      <h3>文稿保存在哪里</h3>
+      <p>
+        保存在你选择的工作文件夹里，就是普通的 .md 文件。应用不向云端复制，也没有账号与同步，卸载应用不会删除这些文稿。
+      </p>
+
+      <h3>如何导出</h3>
+      <p>
+        菜单里可以导出 HTML 单文件、PDF、Word 与 PowerPoint。PDF 走系统打印面板；Word 与 PowerPoint 中的公式与图表会渲染成图片嵌入。
+      </p>
+
+      <h3>版本控制怎么用</h3>
+      <p>
+        对工作区开启版本控制后，应用会随你的操作提交快照。可以查看某个文件的历次版本、与原文件并排比较，也可以在改动不满意时还原到其中一版。
+      </p>
+
+      <h3>是否需要订阅</h3>
+      <p>不需要。应用为一次性购买，没有订阅，也没有内购项目。</p>
+
+      <h3>如何申请退款</h3>
+      <p>
+        通过 App Store 完成的购买与退款由 Apple 处理，请在
+        <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 提交申请。
+      </p>
+
+      <h2>联系我们</h2>
+      <div class="contact">
+        <p>邮箱：<span>36632271@qq.com</span></p>
+        <p>电话：<span>+86 13651386087</span></p>
+        <p>地址：<span>北京市海淀区翠微路东里5号楼217室</span></p>
+        <p>通常会在两个工作日内回复。</p>
+      </div>
+
+      <h2 id="en">Support</h2>
+      <p class="lead">A local-first Markdown editor. Your documents are ordinary .md files in a folder you choose, and they work without an internet connection.</p>
+
+      <h3>Requirements</h3>
+      <p>macOS 10.15 or later. The App Store build runs inside the system sandbox.</p>
+
+      <h3>Why does it ask for a folder the first time</h3>
+      <p>
+        A sandboxed app can only reach a folder that the user grants through the system panel. Choose a working folder once and the app remembers it with a security-scoped bookmark, so it is available on the next launch. Pick another one from the sidebar whenever you need to.
+      </p>
+
+      <h3>AI assist says it cannot connect</h3>
+      <p>
+        AI assist needs your own model. It connects by default to Ollama on 127.0.0.1:11434, and you can enter your own API endpoint in Settings. Without a model the panel reports that it cannot connect; editing, preview, math, diagrams, music notation and all exports keep working.
+      </p>
+
+      <h3>Where documents are stored</h3>
+      <p>
+        In the working folder you chose, as ordinary .md files. Nothing is copied to a cloud service, there is no account and no sync, and removing the app does not delete your documents.
+      </p>
+
+      <h3>Exporting</h3>
+      <p>
+        Export to a single HTML file, PDF, Word and PowerPoint from the menu. PDF goes through the system print panel; math and diagrams are rendered as images inside the Word and PowerPoint output.
+      </p>
+
+      <h3>Version control</h3>
+      <p>
+        Turn on version control for a workspace and the app commits snapshots as you work. You can browse a file's earlier versions, compare them side by side with the current file, and restore one if you change your mind.
+      </p>
+
+      <h3>Subscription</h3>
+      <p>Not required. The app is a one-time purchase, with no subscription and no in-app purchases.</p>
+
+      <h3>Refunds</h3>
+      <p>
+        Purchases and refunds made through the App Store are handled by Apple. Submit a request at
+        <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
+      </p>
+
+      <h3>Contact</h3>
+      <div class="contact">
+        <p>Email: <span>36632271@qq.com</span></p>
+        <p>Phone: <span>+86 136 5138 6087</span></p>
+        <p>Address: <span>Room 217, Building 5, Cuiwei Road Dongli, Haidian District, Beijing, China</span></p>
+        <p>We usually reply within two business days.</p>
+      </div>
+
+      <footer>Happy Markdown · <a href="./privacy.html">隐私政策 / Privacy Policy</a></footer>
+    </main>
+  </body>
+</html>
