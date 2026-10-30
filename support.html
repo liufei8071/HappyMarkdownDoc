@@ -93,19 +93,45 @@
   </head>
   <body>
     <main>
-      <p class="lang"><a href="#en">English</a></p>
+      <p class="lang">
+        <a href="#en">English</a> · <a href="#es">Español</a> · <a href="#ja">日本語</a> ·
+        <a href="#ko">한국어</a> · <a href="#zh">中文（简体）</a> · <a href="#zh-Hant">繁體中文</a>
+      </p>
 
-      <h1>Happy Markdown 技术支持</h1>
+      <h1 id="zh">Happy Markdown 技术支持</h1>
       <p class="lead">本地优先的 Markdown 编辑器。文稿是以 .md 保存的普通文件，放在你选择的文件夹里，断网也能写作与导出。</p>
 
       <h2>运行要求</h2>
-      <p>macOS 10.15 或更高版本。App Store 版本在系统沙箱中运行。</p>
+      <p>
+        macOS 10.15 或更高版本（App Store 版本在系统沙箱中运行）；Windows 10 版本 2004
+        （内部版本 19041）或更高，或 Windows 11。
+      </p>
+      <p>
+        Windows 版使用系统已安装的 Microsoft Edge WebView2 运行时：Windows 11 自带，
+        Windows 10 通常随 Edge 安装。
+      </p>
 
       <h2>常见问题</h2>
 
       <h3>首次打开时为什么要求选择文件夹</h3>
       <p>
         沙箱下的应用只能访问用户通过系统面板授权的目录。首次打开时选择一个工作文件夹即可，应用会用安全作用域书签记住它，下次启动继续可用。需要更换目录时，从侧栏重新选择。
+      </p>
+
+      <h3>Windows 上双击后没有反应</h3>
+      <p>
+        通常是缺少 Microsoft Edge WebView2 运行时。请先确认：设置 → 应用 → 已安装的应用里搜索
+        WebView2，或查看
+        <code>C:\Program Files (x86)\Microsoft\EdgeWebView\Application</code>
+        下是否有版本目录。若没有，请从
+        <a href="https://developer.microsoft.com/microsoft-edge/webview2/">微软官方页面</a>
+        下载与系统一致的 Evergreen Standalone Installer（x64 或 ARM64），安装后重新启动应用。
+        Windows 11 通常已自带；Windows 10 多数机器随 Edge 安装。
+      </p>
+      <p>
+        安装后仍无法启动时，请把 Windows 版本与错误信息发到支持邮箱。如果应用能启动但随后
+        异常退出，日志在 <code>%LOCALAPPDATA%\com.happymarkdown.desktop\logs</code>，
+        请一并附上。
       </p>
 
       <h3>AI 功能提示无法连接</h3>
@@ -136,6 +162,11 @@
         通过 App Store 完成的购买与退款由 Apple 处理，请在
         <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 提交申请。
       </p>
+      <p>
+        通过 Microsoft Store 完成的购买与退款由 Microsoft 处理，请在
+        <a href="https://account.microsoft.com/billing/orders">account.microsoft.com 的订单历史</a>
+        中申请，或联系 Microsoft 支持。
+      </p>
 
       <h2>联系我们</h2>
       <div class="contact">
@@ -149,11 +180,34 @@
       <p class="lead">A local-first Markdown editor. Your documents are ordinary .md files in a folder you choose, and they work without an internet connection.</p>
 
       <h3>Requirements</h3>
-      <p>macOS 10.15 or later. The App Store build runs inside the system sandbox.</p>
+      <p>
+        macOS 10.15 or later (the App Store build runs inside the system sandbox); Windows 10
+        version 2004 (build 19041) or later, or Windows 11.
+      </p>
+      <p>
+        The Windows build uses the system Microsoft Edge WebView2 Runtime: included in Windows 11
+        and usually installed with Microsoft Edge on Windows 10.
+      </p>
 
       <h3>Why does it ask for a folder the first time</h3>
       <p>
         A sandboxed app can only reach a folder that the user grants through the system panel. Choose a working folder once and the app remembers it with a security-scoped bookmark, so it is available on the next launch. Pick another one from the sidebar whenever you need to.
+      </p>
+
+      <h3>The app does not start on Windows</h3>
+      <p>
+        This usually means the Microsoft Edge WebView2 Runtime is missing. Check Settings → Apps →
+        Installed apps for WebView2, or look for a version folder under
+        <code>C:\Program Files (x86)\Microsoft\EdgeWebView\Application</code>. If it is missing,
+        download the Evergreen Standalone Installer (x64 or ARM64 to match your system) from
+        <a href="https://developer.microsoft.com/microsoft-edge/webview2/">Microsoft's official page</a>
+        and relaunch the app. Windows 11 usually includes it; most Windows 10 machines have it with
+        Microsoft Edge.
+      </p>
+      <p>
+        If it still does not start, email us your Windows version and any error message. If the app
+        starts and then exits unexpectedly, attach the logs from
+        <code>%LOCALAPPDATA%\com.happymarkdown.desktop\logs</code>.
       </p>
 
       <h3>AI assist says it cannot connect</h3>
@@ -184,6 +238,12 @@
         Purchases and refunds made through the App Store are handled by Apple. Submit a request at
         <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
       </p>
+      <p>
+        Purchases and refunds made through the Microsoft Store are handled by Microsoft. Request one
+        from your order history at
+        <a href="https://account.microsoft.com/billing/orders">account.microsoft.com</a>, or contact
+        Microsoft support.
+      </p>
 
       <h3>Contact</h3>
       <div class="contact">
@@ -192,6 +252,317 @@
         <p>Address: <span>Room 217, Building 5, Cuiwei Road Dongli, Haidian District, Beijing, China</span></p>
         <p>We usually reply within two business days.</p>
       </div>
+
+      <section id="es" lang="es">
+        <h2>Asistencia</h2>
+        <p class="lead">Un editor de Markdown que se queda en su equipo. Sus documentos son archivos .md corrientes, en una carpeta que usted elija, y funcionan sin conexión.</p>
+
+        <h3>Requisitos</h3>
+        <p>
+          macOS 10.15 o posterior (la versión de App Store se ejecuta en el entorno aislado del sistema);
+          Windows 10 versión 2004 (compilación 19041) o posterior, o Windows 11.
+        </p>
+        <p>
+          La versión para Windows usa el entorno de ejecución Microsoft Edge WebView2 ya instalado en el
+          sistema: viene con Windows 11 y en Windows 10 suele instalarse junto con Microsoft Edge.
+        </p>
+
+        <h3>Por qué pide una carpeta la primera vez</h3>
+        <p>
+          Una aplicación en entorno aislado solo puede acceder a las carpetas que el usuario autoriza desde
+          el panel del sistema. Elija una carpeta de trabajo una vez y la aplicación la recordará con un
+          marcador con ámbito de seguridad, así que seguirá disponible en el próximo arranque. Puede elegir
+          otra desde la barra lateral cuando quiera.
+        </p>
+
+        <h3>En Windows no arranca al hacer doble clic</h3>
+        <p>
+          Normalmente falta el entorno de ejecución Microsoft Edge WebView2. Compruébelo en Configuración →
+          Aplicaciones → Aplicaciones instaladas, buscando WebView2, o mire si hay una carpeta de versión en
+          <code>C:\Program Files (x86)\Microsoft\EdgeWebView\Application</code>. Si no la hay, descargue
+          el Evergreen Standalone Installer (x64 o ARM64 según su sistema) desde
+          <a href="https://developer.microsoft.com/microsoft-edge/webview2/">la página oficial de Microsoft</a>
+          e inicie la aplicación de nuevo. Windows 11 lo incluye; en la mayoría de los equipos con Windows 10
+          llega con Microsoft Edge.
+        </p>
+        <p>
+          Si aun así no arranca, envíenos por correo la versión de Windows y el mensaje de error. Si la
+          aplicación arranca y luego se cierra de forma inesperada, adjunte los registros de
+          <code>%LOCALAPPDATA%\com.happymarkdown.desktop\logs</code>.
+        </p>
+
+        <h3>La asistencia de IA dice que no puede conectar</h3>
+        <p>
+          La asistencia de IA necesita su propio modelo. Se conecta por defecto a Ollama en 127.0.0.1:11434,
+          y puede indicar su propio punto de API en Ajustes. Sin un modelo, ese panel avisa de que no puede
+          conectar; la edición, la vista previa, las fórmulas, los diagramas, las partituras y todas las
+          exportaciones siguen funcionando.
+        </p>
+
+        <h3>Dónde se guardan los documentos</h3>
+        <p>
+          En la carpeta de trabajo que usted eligió, como archivos .md corrientes. No se copia nada a la
+          nube, no hay cuenta ni sincronización, y desinstalar la aplicación no borra sus documentos.
+        </p>
+
+        <h3>Cómo exportar</h3>
+        <p>
+          Desde el menú puede exportar a un solo archivo HTML, a PDF, a Word y a PowerPoint. El PDF pasa por
+          el panel de impresión del sistema; en las salidas de Word y de PowerPoint las fórmulas y los
+          diagramas se incrustan como imágenes.
+        </p>
+
+        <h3>Control de versiones</h3>
+        <p>
+          Active el control de versiones en un espacio de trabajo y la aplicación guarda versiones mientras
+          trabaja. Puede consultar las versiones anteriores de un archivo, compararlas lado a lado con el
+          archivo actual y restaurar una si cambia de idea.
+        </p>
+
+        <h3>Suscripción</h3>
+        <p>
+          No hace falta. La aplicación se compra una vez, sin suscripción y sin compras dentro de la
+          aplicación.
+        </p>
+
+        <h3>Reembolsos</h3>
+        <p>
+          Las compras y los reembolsos hechos en el App Store los gestiona Apple. Presente la solicitud en
+          <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
+        </p>
+        <p>
+          Las compras y los reembolsos hechos en Microsoft Store los gestiona Microsoft. Solicítelo desde el
+          historial de pedidos de
+          <a href="https://account.microsoft.com/billing/orders">account.microsoft.com</a> o contacte con el
+          servicio de soporte de Microsoft.
+        </p>
+
+        <h3>Contacto</h3>
+        <div class="contact">
+          <p>Correo: <span>36632271@qq.com</span></p>
+          <p>Teléfono: <span>+86 136 5138 6087</span></p>
+          <p>Dirección: <span>Habitación 217, Edificio 5, Cuiwei Road Dongli, Distrito de Haidian, Pekín, China</span></p>
+          <p>Solemos responder en un plazo de dos días laborables.</p>
+        </div>
+      </section>
+
+      <section id="ja" lang="ja">
+        <h2>サポート</h2>
+        <p class="lead">ローカル優先の Markdown エディターです。原稿は選んだフォルダーにある普通の .md ファイルで、ネットワークにつながっていなくても執筆と書き出しができます。</p>
+
+        <h3>動作環境</h3>
+        <p>
+          macOS 10.15 以降（App Store 版はシステムのサンドボックス内で動作します）、または Windows 10
+          バージョン 2004（ビルド 19041）以降もしくは Windows 11。
+        </p>
+        <p>
+          Windows 版はシステムにインストール済みの Microsoft Edge WebView2 ランタイムを使用します。
+          Windows 11 には標準で入っており、Windows 10 では通常 Microsoft Edge と一緒にインストールされます。
+        </p>
+
+        <h3>初回にフォルダーの選択を求められる理由</h3>
+        <p>
+          サンドボックス内のアプリは、ユーザーがシステムのパネルで許可したフォルダーにしかアクセスできません。初回に作業フォルダーを一度選べば、セキュリティスコープ付きブックマークとして記憶され、次回以降も使えます。別のフォルダーに変えるときはサイドバーから選び直せます。
+        </p>
+
+        <h3>Windows でダブルクリックしても起動しない</h3>
+        <p>
+          多くの場合 Microsoft Edge WebView2 ランタイムが入っていません。設定 → アプリ →
+          インストールされているアプリで WebView2 を検索するか、<code>C:\Program Files (x86)\Microsoft\EdgeWebView\Application</code>
+          にバージョンのフォルダーがあるか確認してください。無い場合は
+          <a href="https://developer.microsoft.com/microsoft-edge/webview2/">Microsoft の公式ページ</a>
+          から、システムに合った Evergreen Standalone Installer（x64 または ARM64）をダウンロードしてインストールし、アプリを起動し直してください。Windows 11
+          には標準で入っており、Windows 10 の多くは Microsoft Edge と一緒に入っています。
+        </p>
+        <p>
+          それでも起動しない場合は、Windows のバージョンとエラーメッセージをサポート宛にお送りください。起動したあと異常終了する場合は
+          <code>%LOCALAPPDATA%\com.happymarkdown.desktop\logs</code> のログも添えてください。
+        </p>
+
+        <h3>AI 機能が接続できないと表示される</h3>
+        <p>
+          AI 機能にはご自身のモデルが必要です。既定では本機の 127.0.0.1:11434 で動く Ollama に接続し、設定で独自の API
+          アドレスも指定できます。モデルが無いとそのパネルに接続できない旨が表示されますが、編集、プレビュー、数式、図表、楽譜、書き出しはすべて使えます。
+        </p>
+
+        <h3>原稿の保存場所</h3>
+        <p>
+          選んだ作業フォルダーに、普通の .md ファイルとして保存されます。クラウドへの複製はなく、アカウントも同期もありません。アプリを削除しても原稿は残ります。
+        </p>
+
+        <h3>書き出し</h3>
+        <p>
+          メニューから HTML 単一ファイル、PDF、Word、PowerPoint に書き出せます。PDF はシステムの印刷パネルを使います。Word と
+          PowerPoint では数式と図表が画像として埋め込まれます。
+        </p>
+
+        <h3>バージョン管理</h3>
+        <p>
+          ワークスペースでバージョン管理を有効にすると、作業に合わせてスナップショットが保存されます。ファイルの過去のバージョンを一覧し、現在のファイルと並べて比較し、気が変わったらその一つに戻せます。
+        </p>
+
+        <h3>サブスクリプション</h3>
+        <p>不要です。買い切りのアプリで、サブスクリプションもアプリ内課金もありません。</p>
+
+        <h3>返金</h3>
+        <p>
+          App Store での購入と返金は Apple が処理します。<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>
+          から申請してください。
+        </p>
+        <p>
+          Microsoft Store での購入と返金は Microsoft が処理します。<a href="https://account.microsoft.com/billing/orders">account.microsoft.com
+          の注文履歴</a>から申請するか、Microsoft のサポートにお問い合わせください。
+        </p>
+
+        <h3>お問い合わせ</h3>
+        <div class="contact">
+          <p>メール：<span>36632271@qq.com</span></p>
+          <p>電話：<span>+86 136 5138 6087</span></p>
+          <p>住所：<span>中国 北京市 海淀区 翠微路東里5号楼217室</span></p>
+          <p>通常 2 営業日以内に返信します。</p>
+        </div>
+      </section>
+
+      <section id="ko" lang="ko">
+        <h2>지원</h2>
+        <p class="lead">로컬 우선 Markdown 편집기입니다. 원고는 선택한 폴더에 있는 평범한 .md 파일이며, 네트워크에 연결되지 않아도 작성과 내보내기가 됩니다.</p>
+
+        <h3>실행 환경</h3>
+        <p>
+          macOS 10.15 이상(App Store 버전은 시스템 샌드박스에서 실행됩니다), 또는 Windows 10 버전
+          2004(빌드 19041) 이상이나 Windows 11.
+        </p>
+        <p>
+          Windows 버전은 시스템에 설치된 Microsoft Edge WebView2 런타임을 사용합니다. Windows 11에는 기본
+          포함되어 있고, Windows 10에서는 보통 Microsoft Edge와 함께 설치됩니다.
+        </p>
+
+        <h3>처음 실행할 때 폴더를 고르라는 이유</h3>
+        <p>
+          샌드박스 안의 앱은 사용자가 시스템 패널에서 허용한 폴더에만 접근할 수 있습니다. 처음에 작업 폴더를 한 번 고르면 보안 범위 북마크로 기억해 다음 실행에도 그대로 씁니다. 다른 폴더로 바꾸려면 사이드바에서 다시 고르면 됩니다.
+        </p>
+
+        <h3>Windows에서 두 번 눌러도 실행되지 않음</h3>
+        <p>
+          대개 Microsoft Edge WebView2 런타임이 없어서입니다. 설정 → 앱 → 설치된 앱에서 WebView2를 찾아보거나
+          <code>C:\Program Files (x86)\Microsoft\EdgeWebView\Application</code> 아래에 버전 폴더가 있는지
+          확인하십시오. 없으면 <a href="https://developer.microsoft.com/microsoft-edge/webview2/">Microsoft 공식 페이지</a>에서
+          시스템에 맞는 Evergreen Standalone Installer(x64 또는 ARM64)를 내려받아 설치한 뒤 앱을 다시
+          실행하십시오. Windows 11에는 기본 포함되어 있고, Windows 10은 대부분 Microsoft Edge와 함께 설치되어
+          있습니다.
+        </p>
+        <p>
+          그래도 실행되지 않으면 Windows 버전과 오류 메시지를 지원 메일로 보내 주십시오. 실행된 뒤 비정상
+          종료된다면 <code>%LOCALAPPDATA%\com.happymarkdown.desktop\logs</code>의 로그도 함께 보내 주십시오.
+        </p>
+
+        <h3>AI 기능이 연결할 수 없다고 표시됨</h3>
+        <p>
+          AI 기능에는 직접 준비한 모델이 필요합니다. 기본값은 이 컴퓨터의 127.0.0.1:11434에서 도는
+          Ollama이며, 설정에서 자신의 API 주소를 넣을 수도 있습니다. 모델이 없으면 그 패널에 연결할 수
+          없다는 안내가 나오고, 편집·미리보기·수식·다이어그램·악보·내보내기는 모두 그대로 동작합니다.
+        </p>
+
+        <h3>원고가 저장되는 위치</h3>
+        <p>
+          직접 고른 작업 폴더에 평범한 .md 파일로 저장됩니다. 클라우드로 복사하지 않고 계정도 동기화도
+          없으며, 앱을 삭제해도 원고는 남습니다.
+        </p>
+
+        <h3>내보내기</h3>
+        <p>
+          메뉴에서 HTML 단일 파일, PDF, Word, PowerPoint로 내보낼 수 있습니다. PDF는 시스템 인쇄 패널을
+          거치고, Word와 PowerPoint에서는 수식과 다이어그램이 이미지로 들어갑니다.
+        </p>
+
+        <h3>버전 관리</h3>
+        <p>
+          작업 공간에서 버전 관리를 켜면 작업에 맞춰 스냅숏이 저장됩니다. 파일의 이전 버전을 살펴보고
+          현재 파일과 나란히 비교하며, 마음이 바뀌면 그중 하나로 되돌릴 수 있습니다.
+        </p>
+
+        <h3>구독</h3>
+        <p>필요하지 않습니다. 한 번 구매하는 앱이며 구독도 앱 내 구매도 없습니다.</p>
+
+        <h3>환불</h3>
+        <p>
+          App Store에서 이루어진 구매와 환불은 Apple이 처리합니다.
+          <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>에서 신청하십시오.
+        </p>
+        <p>
+          Microsoft Store에서 이루어진 구매와 환불은 Microsoft가 처리합니다.
+          <a href="https://account.microsoft.com/billing/orders">account.microsoft.com의 주문 내역</a>에서
+          신청하거나 Microsoft 지원에 문의하십시오.
+        </p>
+
+        <h3>문의</h3>
+        <div class="contact">
+          <p>이메일: <span>36632271@qq.com</span></p>
+          <p>전화: <span>+86 136 5138 6087</span></p>
+          <p>주소: <span>중국 베이징시 하이뎬구 추이웨이루둥리 5호관 217호</span></p>
+          <p>보통 영업일 기준 이틀 안에 답장합니다.</p>
+        </div>
+      </section>
+
+      <section id="zh-Hant" lang="zh-Hant">
+        <h2>技術支援</h2>
+        <p class="lead">本機優先的 Markdown 編輯器。文稿是以 .md 儲存的普通檔案，放在你選擇的資料夾裡，離線也能寫作與匯出。</p>
+
+        <h3>執行需求</h3>
+        <p>macOS 10.15 或更新版本（App Store 版本在系統沙箱中執行）；Windows 10 版本 2004（組建 19041）或更新，或 Windows 11。</p>
+        <p>Windows 版使用系統已安裝的 Microsoft Edge WebView2 執行階段：Windows 11 內建，Windows 10 通常隨 Edge 安裝。</p>
+
+        <h3>首次開啟時為什麼要求選擇資料夾</h3>
+        <p>
+          沙箱下的應用程式只能存取使用者透過系統面板授權的目錄。首次開啟時選擇一個工作資料夾即可，應用程式會用安全範圍書籤記住它，下次啟動仍可使用。需要更換目錄時，從側邊欄重新選擇。
+        </p>
+
+        <h3>Windows 上按兩下沒有反應</h3>
+        <p>
+          通常是缺少 Microsoft Edge WebView2 執行階段。請先確認：設定 → 應用程式 → 已安裝的應用程式裡搜尋 WebView2，或查看
+          <code>C:\Program Files (x86)\Microsoft\EdgeWebView\Application</code> 下是否有版本目錄。若沒有，請從
+          <a href="https://developer.microsoft.com/microsoft-edge/webview2/">微軟官方頁面</a>下載與系統相符的 Evergreen
+          Standalone Installer（x64 或 ARM64），安裝後重新啟動應用程式。Windows 11 通常已內建；Windows 10 多數機器隨 Edge 安裝。
+        </p>
+        <p>
+          安裝後仍無法啟動時，請把 Windows 版本與錯誤訊息寄到支援信箱。如果應用程式能啟動但隨後異常結束，日誌在
+          <code>%LOCALAPPDATA%\com.happymarkdown.desktop\logs</code>，請一併附上。
+        </p>
+
+        <h3>AI 功能提示無法連線</h3>
+        <p>
+          AI 功能需要自備模型。預設連線本機 127.0.0.1:11434 上的 Ollama 服務，也可以在設定裡填寫自己的 API 位址。沒有可用模型時，該面板會提示無法連線；編輯、預覽、公式、圖表、樂譜與匯出均不受影響。
+        </p>
+
+        <h3>文稿儲存在哪裡</h3>
+        <p>儲存在你選擇的工作資料夾裡，就是普通的 .md 檔案。應用程式不向雲端複製，也沒有帳號與同步，解除安裝不會刪除這些文稿。</p>
+
+        <h3>如何匯出</h3>
+        <p>選單裡可以匯出 HTML 單一檔案、PDF、Word 與 PowerPoint。PDF 走系統列印面板；Word 與 PowerPoint 中的公式與圖表會算繪成圖片嵌入。</p>
+
+        <h3>版本控制怎麼用</h3>
+        <p>
+          對工作區開啟版本控制後，應用程式會隨你的操作提交快照。可以檢視某個檔案的歷次版本、與原檔案並排比較，也可以在改動不滿意時還原到其中一版。
+        </p>
+
+        <h3>是否需要訂閱</h3>
+        <p>不需要。應用程式為一次買斷，沒有訂閱，也沒有 App 內購買項目。</p>
+
+        <h3>如何申請退款</h3>
+        <p>透過 App Store 完成的購買與退款由 Apple 處理，請在 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> 提交申請。</p>
+        <p>
+          透過 Microsoft Store 完成的購買與退款由 Microsoft 處理，請在
+          <a href="https://account.microsoft.com/billing/orders">account.microsoft.com 的訂單記錄</a>中申請，或聯絡 Microsoft 支援。
+        </p>
+
+        <h3>聯絡我們</h3>
+        <div class="contact">
+          <p>電子郵件：<span>36632271@qq.com</span></p>
+          <p>電話：<span>+86 136 5138 6087</span></p>
+          <p>地址：<span>中國北京市海淀區翠微路東里5號樓217室</span></p>
+          <p>通常在兩個工作天內回覆。</p>
+        </div>
+      </section>
 
       <footer>Happy Markdown · <a href="./privacy.html">隐私政策 / Privacy Policy</a></footer>
     </main>
