@@ -110,16 +110,16 @@
       <ul>
         <li>文稿是工作区文件夹里的 .md 文件，应用只读写工作区内的文件。</li>
         <li>
-          macOS 首次启动时，工作区默认指向 iCloud 云盘里的 Happy Markdown 文件夹（容器 iCloud.com.happymarkdown.app.ios），Mac 与 iPhone 打开的是同一份文件。该文件夹由你自己的 Apple 账户承载，同步由 Apple 完成，开发者不接触其中的内容。可以改到本机其他文件夹，此时文件不进入云端；iOS 版的工作区固定为该文件夹，不提供更换入口，iCloud 云盘不可用时退回应用自身的容器。
+          macOS 首次启动时，工作区默认指向 iCloud 云盘里的 Happy Markdown 文件夹（容器 iCloud.com.happymarkdown.app.ios），各设备打开的是同一份文件。该文件夹由你自己的 Apple 账户承载，同步由 Apple 完成，开发者不接触其中的内容。可以改到本机其他文件夹，此时文件不进入云端；iOS 版的工作区固定为该文件夹，不提供更换入口，iCloud 云盘不可用时退回应用自身的容器。
         </li>
         <li>设置在系统标准配置目录下，随应用卸载而移除。</li>
-        <li>运行日志写在本机的系统日志目录，用于排查故障，菜单「帮助 → 打开日志文件夹」可以直接打开。日志不离开这台机器。</li>
+        <li>运行日志写在本机的系统日志目录，用于排查故障，菜单「帮助 → 打开日志文件夹」可以直接打开。日志不离开这台设备。</li>
       </ul>
 
       <h2>网络访问</h2>
       <p>应用默认不联网，仅在下列两种情形下发出请求，两者都由你自行配置：</p>
       <ul>
-        <li>AI 指向本机 Ollama 服务时，请求只发往本机地址 127.0.0.1:11434，不出这台电脑。</li>
+        <li>AI 指向本机 Ollama 服务时，请求只发往本机地址 127.0.0.1:11434，不离开这台设备。</li>
         <li>你在设置里填写了自己的 API 地址时，相关文档内容会发往你填写的那个地址，由你选择的模型服务商处理，适用该服务商的隐私政策。</li>
       </ul>
       <p>除此之外，应用不与任何服务器通信，也不存在开发者的服务端。</p>
@@ -130,7 +130,7 @@
       </p>
 
       <h2>第三方共享</h2>
-      <p>不共享。应用不向第三方发送任何数据。</p>
+      <p>除你在设置中自行配置的 AI 服务外，应用不向第三方发送任何数据。</p>
 
       <h2>儿童</h2>
       <p>应用不收集任何用户信息，因此不涉及儿童数据的收集与处理。</p>
@@ -157,16 +157,16 @@
       <ul>
         <li>Your documents are .md files in the workspace folder; the app only reads and writes files inside it.</li>
         <li>
-          On first launch, macOS points the workspace at the Happy Markdown folder in iCloud Drive (container iCloud.com.happymarkdown.app.ios), so the Mac and the iPhone open the same files. That folder lives in your own Apple account, syncing is carried out by Apple, and the developer has no access to its contents. You can point the workspace at another local folder, in which case files do not go to the cloud; the iOS version keeps this folder with no switch, and falls back to the app's own container when iCloud Drive is unavailable.
+          On first launch, macOS points the workspace at the Happy Markdown folder in iCloud Drive (container iCloud.com.happymarkdown.app.ios), so your devices open the same files. That folder lives in your own Apple account, syncing is carried out by Apple, and the developer has no access to its contents. You can point the workspace at another local folder, in which case files do not go to the cloud; the iOS version keeps this folder with no switch, and falls back to the app's own container when iCloud Drive is unavailable.
         </li>
         <li>Settings live in the standard system configuration directory and are removed with the app.</li>
-        <li>A run log is written to the system log directory on your machine to help diagnose problems, reachable from Help → Open Log Folder. The log does not leave your computer.</li>
+        <li>A run log is written to the system log directory on your machine to help diagnose problems, reachable from Help → Open Log Folder. The log does not leave this device.</li>
       </ul>
 
       <h3>Network access</h3>
       <p>The app is offline by default and makes requests in two cases only, both configured by you:</p>
       <ul>
-        <li>With AI assist pointing at a local Ollama service, requests go to 127.0.0.1:11434 on your own machine.</li>
+        <li>With AI assist pointing at a local Ollama service, requests go to 127.0.0.1:11434 on this device.</li>
         <li>If you enter your own API endpoint in Settings, the related document content is sent to that endpoint and handled by the model provider you chose, under that provider's privacy policy.</li>
       </ul>
       <p>Beyond these, the app contacts no server, and there is no server operated by the developer.</p>
@@ -177,7 +177,7 @@
       </p>
 
       <h3>Sharing with third parties</h3>
-      <p>None. The app sends no data to third parties.</p>
+      <p>Apart from the AI service you configure yourself in Settings, the app sends no data to third parties.</p>
 
       <h3>Children</h3>
       <p>The app collects no user information at all, so no children's data is collected or processed.</p>
@@ -205,16 +205,16 @@
         <ul>
           <li>Los documentos son archivos .md dentro de la carpeta de trabajo; la aplicación solo lee y escribe archivos de esa carpeta.</li>
           <li>
-            En el primer inicio, macOS fija la carpeta de trabajo en la carpeta Happy Markdown de iCloud Drive (contenedor iCloud.com.happymarkdown.app.ios), de modo que el Mac y el iPhone abren los mismos archivos. Esa carpeta pertenece a su propia cuenta de Apple, la sincronización la realiza Apple y el desarrollador no accede a su contenido. Puede elegir otra carpeta local, y en ese caso los archivos no van a la nube; la versión de iOS mantiene esa carpeta sin opción de cambio y, si iCloud Drive no está disponible, usa el contenedor de la propia aplicación.
+            En el primer inicio, macOS fija la carpeta de trabajo en la carpeta Happy Markdown de iCloud Drive (contenedor iCloud.com.happymarkdown.app.ios), de modo que sus dispositivos abren los mismos archivos. Esa carpeta pertenece a su propia cuenta de Apple, la sincronización la realiza Apple y el desarrollador no accede a su contenido. Puede elegir otra carpeta local, y en ese caso los archivos no van a la nube; la versión de iOS mantiene esa carpeta sin opción de cambio y, si iCloud Drive no está disponible, usa el contenedor de la propia aplicación.
           </li>
           <li>La configuración vive en el directorio estándar del sistema y se elimina al desinstalar la aplicación.</li>
-          <li>Los registros de ejecución se escriben en el directorio de registros del sistema de este equipo, para diagnosticar fallos, y se abren desde el menú «Ayuda → Abrir la carpeta de registros». No salen de esta máquina.</li>
+          <li>Los registros de ejecución se escriben en el directorio de registros del sistema de este dispositivo, para diagnosticar fallos, y se abren desde el menú «Ayuda → Abrir la carpeta de registros». No salen de este dispositivo.</li>
         </ul>
 
         <h3>Acceso a la red</h3>
         <p>La aplicación no se conecta de forma predeterminada; solo envía solicitudes en los dos casos siguientes, y ambos los configura usted:</p>
         <ul>
-          <li>Si la IA apunta al servicio local de Ollama, las solicitudes van solo a la dirección local 127.0.0.1:11434 y no salen de este equipo.</li>
+          <li>Si la IA apunta al servicio local de Ollama, las solicitudes van solo a la dirección local 127.0.0.1:11434 y no salen de este dispositivo.</li>
           <li>Si indica su propia dirección de API en Ajustes, el contenido de los documentos se envía a esa dirección y lo trata el proveedor de modelos que usted elija, conforme a la política de privacidad de ese proveedor.</li>
         </ul>
         <p>Fuera de estos casos la aplicación no se comunica con ningún servidor, y el desarrollador no opera ninguno.</p>
@@ -225,7 +225,7 @@
         </p>
 
         <h3>Cesiones a terceros</h3>
-        <p>Ninguna. La aplicación no envía datos a terceros.</p>
+        <p>Salvo el servicio de IA que usted configure en Ajustes, la aplicación no envía datos a terceros.</p>
 
         <h3>Menores</h3>
         <p>La aplicación no recoge información de ningún usuario, así que no hay recogida ni tratamiento de datos de menores.</p>
@@ -254,16 +254,16 @@
         <ul>
           <li>原稿はワークスペース内の .md ファイルで、アプリはワークスペース内のファイルだけを読み書きします。</li>
           <li>
-            macOS は初回起動時にワークスペースを iCloud Drive の Happy Markdown フォルダー（コンテナ iCloud.com.happymarkdown.app.ios）に設定するため、Mac と iPhone で同じファイルを開けます。このフォルダーはお客様自身の Apple アカウントに属し、同期は Apple が行い、開発者がその内容に触れることはありません。本機の別のフォルダーに変更でき、その場合ファイルはクラウドに上がりません。iOS 版はこのフォルダーに固定され、変更手段はなく、iCloud Drive が使えない場合はアプリ自身のコンテナを使います。
+            macOS は初回起動時にワークスペースを iCloud Drive の Happy Markdown フォルダー（コンテナ iCloud.com.happymarkdown.app.ios）に設定するため、お使いの各デバイスで同じファイルを開けます。このフォルダーはお客様自身の Apple アカウントに属し、同期は Apple が行い、開発者がその内容に触れることはありません。本機の別のフォルダーに変更でき、その場合ファイルはクラウドに上がりません。iOS 版はこのフォルダーに固定され、変更手段はなく、iCloud Drive が使えない場合はアプリ自身のコンテナを使います。
           </li>
           <li>設定はシステム標準の設定ディレクトリに保存され、アプリを削除すると一緒に削除されます。</li>
-          <li>実行ログは本機のシステムログディレクトリに書き込まれ、不具合の調査に使います。メニューの「ヘルプ → ログフォルダーを開く」から開けます。ログがこのマシンの外に出ることはありません。</li>
+          <li>実行ログは本機のシステムログディレクトリに書き込まれ、不具合の調査に使います。メニューの「ヘルプ → ログフォルダーを開く」から開けます。ログがこのデバイスの外に出ることはありません。</li>
         </ul>
 
         <h3>ネットワークへのアクセス</h3>
         <p>アプリは既定では通信しません。次の二つの場合にだけ、いずれもご自身の設定に基づいて要求を送ります。</p>
         <ul>
-          <li>AI を本機の Ollama サービスに向けた場合、要求は本機アドレス 127.0.0.1:11434 にだけ送られ、この PC の外に出ません。</li>
+          <li>AI を本機の Ollama サービスに向けた場合、要求は本機アドレス 127.0.0.1:11434 にだけ送られ、このデバイスの外に出ません。</li>
           <li>設定に独自の API アドレスを入力した場合、該当する原稿の内容がそのアドレスへ送られ、お選びのモデル提供元がその提供元のプライバシーポリシーに従って処理します。</li>
         </ul>
         <p>これら以外にアプリが通信するサーバーはなく、開発者が運営するサーバーもありません。</p>
@@ -274,7 +274,7 @@
         </p>
 
         <h3>第三者への提供</h3>
-        <p>ありません。アプリは第三者にデータを送信しません。</p>
+        <p>設定でご自身が指定した AI サービスを除き、アプリは第三者にデータを送信しません。</p>
 
         <h3>児童について</h3>
         <p>アプリは利用者の情報を一切収集しないため、児童のデータの収集・処理には当たりません。</p>
@@ -303,16 +303,16 @@
         <ul>
           <li>원고는 작업 폴더 안의 .md 파일이며, 앱은 작업 폴더 안의 파일만 읽고 씁니다.</li>
           <li>
-            macOS는 첫 실행 시 작업 폴더를 iCloud Drive의 Happy Markdown 폴더(컨테이너 iCloud.com.happymarkdown.app.ios)로 설정하므로 Mac과 iPhone에서 같은 파일을 엽니다. 이 폴더는 사용자 본인의 Apple 계정에 속하며 동기화는 Apple이 수행하고, 개발자는 그 내용에 접근하지 않습니다. 본체의 다른 폴더로 바꿀 수 있고, 이때 파일은 클라우드로 올라가지 않습니다. iOS 버전은 이 폴더로 고정되며 변경 수단이 없고, iCloud Drive를 쓸 수 없을 때는 앱 자체 컨테이너를 사용합니다.
+            macOS는 첫 실행 시 작업 폴더를 iCloud Drive의 Happy Markdown 폴더(컨테이너 iCloud.com.happymarkdown.app.ios)로 설정하므로 각 기기에서 같은 파일을 엽니다. 이 폴더는 사용자 본인의 Apple 계정에 속하며 동기화는 Apple이 수행하고, 개발자는 그 내용에 접근하지 않습니다. 본체의 다른 폴더로 바꿀 수 있고, 이때 파일은 클라우드로 올라가지 않습니다. iOS 버전은 이 폴더로 고정되며 변경 수단이 없고, iCloud Drive를 쓸 수 없을 때는 앱 자체 컨테이너를 사용합니다.
           </li>
           <li>설정은 시스템 표준 설정 폴더에 저장되고 앱을 삭제하면 함께 지워집니다.</li>
-          <li>실행 로그는 이 컴퓨터의 시스템 로그 폴더에 기록되어 문제를 살필 때 씁니다. 메뉴의 「도움말 → 로그 폴더 열기」로 바로 열 수 있습니다. 로그는 이 컴퓨터를 벗어나지 않습니다.</li>
+          <li>실행 로그는 이 기기의 시스템 로그 폴더에 기록되어 문제를 살필 때 씁니다. 메뉴의 「도움말 → 로그 폴더 열기」로 바로 열 수 있습니다. 로그는 이 기기를 벗어나지 않습니다.</li>
         </ul>
 
         <h3>네트워크 접근</h3>
         <p>앱은 기본적으로 통신하지 않으며, 다음 두 경우에만 요청을 보내고 둘 다 직접 설정한 경우에 해당합니다.</p>
         <ul>
-          <li>AI를 이 컴퓨터의 Ollama 서비스로 지정하면 요청은 로컬 주소 127.0.0.1:11434로만 가고 이 컴퓨터를 벗어나지 않습니다.</li>
+          <li>AI를 이 기기의 Ollama 서비스로 지정하면 요청은 로컬 주소 127.0.0.1:11434로만 가고 이 기기를 벗어나지 않습니다.</li>
           <li>설정에 자신의 API 주소를 넣으면 해당 원고 내용이 그 주소로 전송되고, 고른 모델 제공자가 그 제공자의 개인정보 처리방침에 따라 처리합니다.</li>
         </ul>
         <p>그 밖에 앱이 통신하는 서버는 없으며, 개발자가 운영하는 서버도 없습니다.</p>
@@ -323,7 +323,7 @@
         </p>
 
         <h3>제3자 제공</h3>
-        <p>없습니다. 앱은 제3자에게 데이터를 보내지 않습니다.</p>
+        <p>설정에서 직접 지정한 AI 서비스를 제외하면 앱은 제3자에게 데이터를 보내지 않습니다.</p>
 
         <h3>아동</h3>
         <p>앱은 이용자 정보를 수집하지 않으므로 아동 데이터의 수집과 처리에 해당하지 않습니다.</p>
@@ -350,16 +350,16 @@
         <ul>
           <li>文稿是工作區資料夾裡的 .md 檔案，應用程式只讀寫工作區內的檔案。</li>
           <li>
-            macOS 首次啟動時，工作區預設指向 iCloud 雲碟裡的 Happy Markdown 資料夾（容器 iCloud.com.happymarkdown.app.ios），Mac 與 iPhone 開啟的是同一份檔案。該資料夾由你自己的 Apple 帳號承載，同步由 Apple 完成，開發者不接觸其中的內容。可以改到本機其他資料夾，此時檔案不進入雲端；iOS 版的工作區固定為該資料夾，不提供更換入口，iCloud 雲碟無法使用時退回應用程式自身的容器。
+            macOS 首次啟動時，工作區預設指向 iCloud 雲碟裡的 Happy Markdown 資料夾（容器 iCloud.com.happymarkdown.app.ios），各裝置開啟的是同一份檔案。該資料夾由你自己的 Apple 帳號承載，同步由 Apple 完成，開發者不接觸其中的內容。可以改到本機其他資料夾，此時檔案不進入雲端；iOS 版的工作區固定為該資料夾，不提供更換入口，iCloud 雲碟無法使用時退回應用程式自身的容器。
           </li>
           <li>設定存放在系統標準設定目錄下，隨應用程式解除安裝而移除。</li>
-          <li>執行日誌寫在本機的系統日誌目錄，用於排查故障，選單「說明 → 開啟日誌資料夾」可直接開啟。日誌不離開這台機器。</li>
+          <li>執行日誌寫在本機的系統日誌目錄，用於排查故障，選單「說明 → 開啟日誌資料夾」可直接開啟。日誌不離開這台裝置。</li>
         </ul>
 
         <h3>網路存取</h3>
         <p>應用程式預設不連網，僅在下列兩種情形發出請求，兩者都由你自行設定：</p>
         <ul>
-          <li>AI 指向本機 Ollama 服務時，請求只發往本機位址 127.0.0.1:11434，不出這台電腦。</li>
+          <li>AI 指向本機 Ollama 服務時，請求只發往本機位址 127.0.0.1:11434，不離開這台裝置。</li>
           <li>你在設定裡填寫自己的 API 位址時，相關文稿內容會發往你填寫的位址，由你選擇的模型服務商處理，適用該服務商的隱私權政策。</li>
         </ul>
         <p>除此之外，應用程式不與任何伺服器通訊，也不存在開發者的伺服器端。</p>
@@ -368,7 +368,7 @@
         <p>透過 App Store 完成的購買、付款與退款由 Apple 處理，該部分資料由 Apple 依其隱私權政策收集，開發者不接觸你的付款資訊。</p>
 
         <h3>第三方分享</h3>
-        <p>不分享。應用程式不向第三方傳送任何資料。</p>
+        <p>除你在設定中自行設定的 AI 服務外，應用程式不向第三方傳送任何資料。</p>
 
         <h3>兒童</h3>
         <p>應用程式不收集任何使用者資訊，因此不涉及兒童資料的收集與處理。</p>
